@@ -22,20 +22,10 @@ public class Exo18 {
 				 new Person("Thom","Hanks",51),
 				 new Person("Harry","Jakson",61),
 				 new Person("Mo","Sun",24));
-        /* Comments: Serialization
-        * Question 18.a
-        * We need to <serialize> objects
-        * it is about creating a portable representation of an object
-        * a portable representation (i.e: XML, JSON, binary Representation)
-        *
-        *      ObjectOutputStream is used to write Java objects in binary files
-        *
-        * Question 18.b
-        * We need to make the class Person serializable by implementing
-        * Serializable Interface into Person class
-        *       public class Person implements Serializable
-        * Optional : We could add a serialVersionUID
-         */
+        // Q.a  We need to <serialize> objects
+		
+       // Q.b    we have to implment Serializable Interface into Person class
+       
         String fileName = "files/E18Persons.bin";
 
         try (PersonOutputStream personOutputStream1 = new PersonOutputStream(new FileOutputStream(fileName))) {
